@@ -8,5 +8,5 @@ def map_to_no_change(arr)
 end 
 
 def map_to_double(arr)
-  arr.map{ |ele| ele**2 }
+  arr.map{ |ele| ele+ele }
 end 
