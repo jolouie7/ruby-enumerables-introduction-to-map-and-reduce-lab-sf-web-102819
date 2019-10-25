@@ -10,19 +10,42 @@ def map_to_negativize(arr)
 end 
 
 def map_to_no_change(arr)
-  arr.map{ |ele| ele }
+  i = 0 
+  new_arr = []
+  while i < arr.length do 
+    new_arr << arr[i]
+    i += 1
+  end 
+  new_arr
 end 
 
 def map_to_double(arr)
-  arr.map{ |ele| ele+ele }
+  i = 0 
+  new_arr = []
+  while i < arr.length do 
+    new_arr << arr[i] + arr[i]
+    i += 1
+  end 
+  new_arr
 end 
 
 def map_to_square(arr)
-  arr.map{ |ele| ele**2 }
+  i = 0 
+  new_arr = []
+  while i < arr.length do 
+    new_arr << arr[i] * arr[i]
+    i += 1
+  end 
+  new_arr
 end 
 
 def reduce_to_total(arr, starting_point = 0)
-  arr.reduce(starting_point, :+)
+  i = 0 
+  while i < arr.length do 
+    starting_point += arr[i]
+    i += 1
+  end 
+  starting_point
 end 
 
 def reduce_to_all_true(arr)
