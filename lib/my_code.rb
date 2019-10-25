@@ -15,6 +15,6 @@ def map_to_square(arr)
   arr.map{ |ele| ele**2 }
 end 
 
-def reduce_to_total(arr, starting_point)
+def reduce_to_total(arr, starting_point = 0)
   arr.reduce(starting_point, :+)
 end 
