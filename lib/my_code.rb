@@ -26,12 +26,13 @@ def reduce_to_total(arr, starting_point = 0)
 end 
 
 def reduce_to_all_true(arr)
-  new_arr = []
   i = 0 
   while i < arr.length do 
-    arr[i] = true
-    new_arr << arr[i]
+    if arr[i] == false
+      return false
+    else 
+      return true
+    end 
     i += 1 
   end 
-  new_arr
 end 
