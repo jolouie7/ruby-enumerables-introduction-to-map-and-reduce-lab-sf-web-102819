@@ -10,3 +10,7 @@ end
 def map_to_double(arr)
   arr.map{ |ele| ele+ele }
 end 
+
+def map_to_square(arr)
+  arr.map{ |ele| ele**2 }
+end 
