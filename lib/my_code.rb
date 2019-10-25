@@ -18,3 +18,7 @@ end
 def reduce_to_total(arr, starting_point = 0)
   arr.reduce(starting_point, :+)
 end 
+
+def reduce_to_all_true(arr)
+  arr.reduce()
+end 
