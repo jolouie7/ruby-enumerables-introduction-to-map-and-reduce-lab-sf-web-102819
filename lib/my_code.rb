@@ -1,6 +1,9 @@
 # My Code here....
 def map_to_negativize(arr)
-  arr.map{ |ele| ele*-1 }
+  new_arr = arr.each |ele| do 
+    ele*-1
+  end
+  new_arr
 end 
 
 def map_to_no_change(arr)
@@ -20,5 +23,8 @@ def reduce_to_total(arr, starting_point = 0)
 end 
 
 def reduce_to_all_true(arr)
-  arr.reduce( |ele| if )
+  new_arr = arr.each |ele| do 
+    ele = true
+  end
+  return new_arr[0]
 end 
