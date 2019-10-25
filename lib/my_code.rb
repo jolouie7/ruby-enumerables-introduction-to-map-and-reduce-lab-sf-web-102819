@@ -1,8 +1,11 @@
 # My Code here....
 def map_to_negativize(arr)
-  new_arr = arr.each |ele| do 
-    ele*-1
-  end
+  i = 0 
+  new_arr = []
+  while i < arr.length do 
+    new_arr << arr[i] * -1
+    i += 1
+  end 
   new_arr
 end 
 
@@ -23,8 +26,12 @@ def reduce_to_total(arr, starting_point = 0)
 end 
 
 def reduce_to_all_true(arr)
-  new_arr = arr.each |ele| do 
-    ele = true
-  end
-  return new_arr[0]
+  new_arr = []
+  i = 0 
+  while i < arr.length do 
+    arr[i] = true
+    new_arr << arr[i]
+    i += 1 
+  end 
+  new_arr
 end 
